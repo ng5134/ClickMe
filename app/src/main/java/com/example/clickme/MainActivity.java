@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view)
+
     {
         count ++;
         btn.setText("This is a click number:"+count);
