@@ -12,17 +12,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
-    boolean isClicked = false;
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.Click1);
-
     }
 
     public void go(View view)
     {
-        btn.setText("Oh, yea, I’ve been clicked!");
+        count ++;
+        btn.setText("This is a click number:"+count);
     }
 }
